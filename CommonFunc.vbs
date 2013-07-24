@@ -13,7 +13,6 @@ Sub SwitchMouseReplay(bType)
 	End Select
 End Sub
 
-
 '''<Summary>验证QTP对象存在与否</Summary>
 '''<author>Xubin</author>
 '''<example>
@@ -27,3 +26,15 @@ Sub AssertExist(qObj)
 	end if
 End Sub
 
+'''<Summary>验证值是否为真</Summary>
+'''<author>Xubin</author>
+'''<example>
+'''AssertTrue bTrue
+'''</example>
+Sub AssertTrue(bBool)
+	If bBool Then
+		reporter.ReportEvent micPass,Cstr(bBool),"结果为真"
+	else
+		reporter.ReportEvent micFail,Cstr(bBool),"结果为假"
+	End If
+End Sub
