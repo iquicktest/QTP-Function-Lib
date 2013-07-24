@@ -13,7 +13,8 @@ Sub SwitchMouseReplay(bType)
 	End Select
 End Sub
 
-'''<Summary>验证QTP对象是否存在</Summary>
+
+'''<Summary>验证QTP对象存在与否</Summary>
 '''<author>Xubin</author>
 '''<example>
 '''AssertExist Browser("logon")
